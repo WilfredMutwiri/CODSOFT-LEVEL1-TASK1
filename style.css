@@ -1,0 +1,612 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+/* Header section */
+#headerContainer{
+    background-color: rgb(248, 245, 245);
+    color: rgb(12, 12, 12);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height:50px;
+    padding:30px;
+}
+#headerDivs{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#Hname{
+    color:rgb(251, 166, 8);
+    display: flex;
+    justify-content:space-between;
+}
+#Hname svg{
+    width: 20px;
+    color: rgb(12, 12, 12);
+    display: none;
+}
+#hMenu ul{
+    display:flex;
+    list-style: none;
+}
+#hMenu ul li{
+    margin-left: 20px;
+    padding: 5px;
+}
+#hMenu ul li a{
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+}
+#hMenu ul li a:hover{
+    color:rgb(248, 171, 28);
+    cursor: pointer;
+}
+/* end of header */
+/* home section*/
+.homeHolder{
+    display: flex;
+    width: 100%;
+    color: rgb(226, 226, 226);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(44, 43, 43);
+    border-bottom-right-radius:100px;
+}
+.homeContainer{
+    width: 80%;
+    display: flex ;
+    margin: 0 auto;
+    padding-top: 40px;
+    justify-content: space-between;
+    height:auto;
+    transition:all 9s ease-out;
+    -webkit-transition:all 2s ease-out;
+    -moz-transition:all 9s ease-out;
+    -ms-transition:all 9s ease-out;
+    -o-transition:all 9s ease-out;
+}
+.homeContainer:hover{
+    transform: translate(20px);
+    -webkit-transform: translate(20px);
+    -moz-transform: translate(20px);
+    -ms-transform: translate(20px);
+    -o-transform: translate(20px);
+}
+#nameIntro{
+    display: flex;
+}
+#nameIntro img{
+    width:6rem;
+    height:6rem;
+    margin-top:-35px;
+}
+#icon img{
+    width: 30px;
+    height: 30px;
+    background-color:rgb(255, 255, 255);
+    border-radius:15%;
+    margin-left: 14px;
+}
+.homeContent{
+    padding: 20px;
+}
+.homeContent h1{
+padding-bottom: 10px;
+color:rgb(255, 180, 41);
+}
+.homeContent p{
+    font-size:18px;
+    line-height:30px;
+    margin-left:20px;
+}
+#homeIcons{
+    margin-top:20px;
+    display: flex;
+    margin-bottom:35px;
+}
+#homeCallHolder{
+    width:50%;
+    display: flex;
+    justify-content: space-between;
+}
+#homeCallHolder button{
+background:rgb(253, 172, 21);
+padding: 10px;
+border-radius: 10px;
+border: none;
+}
+#homeCallHolder button a{
+text-decoration: none;
+color: rgb(21, 20, 20);
+}
+#homeCallHolder button:hover{
+    background: rgb(239, 6, 6);
+}
+#homeCallHolder button a:hover{
+    color: rgb(246, 245, 245);
+}
+/* end of home section */
+/* about section */
+#aboutHolder{
+background-color: rgb(238, 236, 236);
+color: rgb(8, 8, 8);
+width:100%;
+padding-top:115px;
+border-top-right-radius: 100px;
+}
+#aboutContainer{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+}
+#aboutContainer img{
+    width: 560px;
+    margin-right:40px;
+}
+#aboutInfo h2{
+    font-size:20px;
+    color: rgb(252, 172, 23);
+    padding-bottom: 10px;
+}
+#aboutInfo p{
+    font-size: 1.1rem;
+    line-height: 26px;
+    margin-left:20px;
+}
+#aboutIcons{
+    display: flex;
+    width:200px;
+}
+#aboutIcons img{
+    width: 50px;
+    background-color: white;
+    margin-right:20px;
+    margin-top:20px;
+    border-radius:4px;
+}
+/* end of about section */
+/* proficiency level */
+#profHolder{
+    background-color: #fafafa;
+    padding-top: 40px;
+    width: 100%;
+}
+#profHolder h3{
+    color:orange;
+    text-align:center;
+    font-size: 20px;
+}
+#htmlStatus{
+    width: 400px;
+    height:auto;
+    background-color: rgb(135, 134, 134);
+    border-radius: 10px;
+    margin: 20px;
+    margin-top:4px;
+}
+#hstatusLength{
+    background-color:rgb(255, 255, 0);
+    padding-left: 340px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: rgb(0, 0, 0);
+    padding-right: 10px;
+}
+#cstatusLength{
+    background-color:rgb(62, 222, 22);
+    padding-left: 300px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-right: 10px;
+    color: rgb(0, 0, 0);
+
+}
+#jstatusLength{
+    background-color:rgb(14, 17, 190);
+    padding-left: 200px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: whitesmoke;
+    padding-right: 10px;
+}
+#tstatusLength{
+    background-color:rgb(240, 134, 11);
+    padding-left: 350px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: whitesmoke;
+    padding-right: 10px;
+}
+#gstatusLength{
+    background-color:rgb(240, 15, 11);
+    padding-left: 180px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: rgb(246, 245, 245);
+    padding-right: 10px;
+}
+#statusHolder{
+display: flex;
+font-size:14px;
+color: rgb(8, 8, 8);
+}
+#statusContainer{
+    height:auto;
+    padding-top: 40px;
+}
+#status{
+    width: 80%;
+    margin: 0 auto;
+    padding-top:40px;
+    display: flex;
+}
+#status img{
+    width: 400px;
+}/*end of proficiency section */
+/* projects section */
+#pHolder{
+background-color: rgb(234, 234, 234);
+padding-top: 60px;
+width: 100%;
+padding-bottom: 60px;
+}
+#pHolder h2{
+    color:orange;
+    text-align: center;
+}
+#pContainer{
+display: flex;
+width:80%;
+margin: 0 auto;
+flex-wrap: wrap;
+justify-content:space-around;
+}
+#ptitle{
+display: flex;
+}
+#ptitle img{
+width:50px;
+}
+#ptitle h3{
+margin-top: 22px;
+}
+#project{
+        background-color: rgb(228, 226, 226);
+        padding: 20px;
+        margin-top: 30px;
+        width: 350px;
+        border-bottom-right-radius: 50px;
+        transition: all 0.7s ease-in-out;
+        -webkit-transition: all 0.7s ease-in-out;
+        -moz-transition: all 0.7s ease-in-out;
+        -ms-transition: all 0.7s ease-in-out;
+        -o-transition: all 0.7s ease-in-out;
+}
+#project a{
+    text-decoration: none;
+    color: rgb(255, 165, 0);
+}
+#project a:hover{
+    color:rgb(236, 22, 15);
+}
+#project:hover{
+    background-color:rgb(23, 22, 22);
+    color: rgb(255, 255, 255);
+    transform: translate(1.1rem);
+}
+#pCallBtn{
+    background-color:orange;
+    padding:10px;
+    border: none;
+    border-radius:3px ;
+    -webkit-border-radius:3px ;
+    -moz-border-radius:3px ;
+    -ms-border-radius:3px ;
+    -o-border-radius:3px ;
+}
+#pCallBtn a{
+text-decoration: none;
+color:rgb(11, 11, 11);
+font-size: 16px;
+}
+#btnHolder{
+    margin: 0 auto;
+    width:107px;
+    margin-top:40px;
+}
+#pCallBtn:hover,#pCallBtn a:hover{
+    color:white;
+    background-color:red;
+}/*end of projects */
+/* =====achievements======= */
+#achHolder{
+padding-top: 60px;
+background-color: rgb(215, 213, 213);
+width: 100%;
+}
+#achHolder h2{
+    color: rgb(244, 161, 7);
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 22px;
+}
+#achievements{
+    width: 490px;
+    padding: 10px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+#achievements a{
+    color: rgb(226, 148, 2);
+    text-decoration: none;
+}
+#achievements a:hover{
+    color: rgb(245, 7, 7);
+}
+#achievements img{
+width:180px;
+margin-top: 20px;
+margin-left: 130px;
+}
+/* End of achievements section */
+/* =======blog section====== */
+#blogHolder{
+padding-top:40px;
+margin-top: 0;
+background-color: rgb(234, 234, 234);
+padding-bottom: 40px;
+width: 100%;
+}
+#blogHolder h2{
+    color: rgb(244, 163, 11);
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+#blogContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+#blog{
+    background-color: rgb(218, 217, 217);
+    margin:20px;
+    width:300px;
+    border-bottom-right-radius: 50px;
+    transition: all 0.7s ease-in-out;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+}
+#blog:hover{
+    background-color: rgb(11, 11, 11);
+    color: rgb(255, 255, 255);
+    transform: translate(1.1rem);
+    -webkit-transform: translate(1.1rem);
+    -moz-transform: translate(1.1rem);
+    -ms-transform: translate(1.1rem);
+    -o-transform: translate(1.1rem);
+}
+#blog img{
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+}
+#blog p{
+    padding:15px;
+}
+#blog h3{
+    color: orange;
+    text-align: center;
+    padding-top: 10px;
+}
+#blog a{
+    text-decoration: none;
+    color: rgb(224, 147, 6);
+}
+#blog a:hover{
+    color:rgb(235, 2, 2);
+}
+/* end of blogs section */
+/* ======contacts section====== */
+#contactsHolder{
+    padding-top: 40px;
+    background-color: rgb(246, 244, 244);
+    padding-bottom: 40px;
+    width: 100%;
+}
+#contContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+#contForm{
+    width:500px;
+    padding-right: 20px;
+    margin-top: 30px;
+}
+#contForm p{
+    font-size: 20px;
+    padding-bottom: 20px;
+    line-height:30px;
+}
+#contForm form label{
+    margin-bottom: 10px;
+    color: rgb(50, 50, 50);
+}
+#contForm form input{
+    padding: 5px;
+    margin-top:5px;
+    margin-bottom: 5px;
+    width: 300px;
+}
+#msg{
+    width: 500px;
+    height: 120px;
+}
+#submit{
+    background: rgb(250, 164, 5);
+    border: none;
+    font-size: 17px;
+}
+#submit:hover{
+    background-color: rgb(240, 10, 10);
+    color: rgb(255, 255, 255);
+}
+/* end of contacts section */
+/* ======footer section===== */
+#footerHolder{
+background-color:rgb(9, 8, 8);
+color: white;
+padding-top: 40px;
+padding-bottom: 40px;
+width: 100%;
+}
+#footerContainer{
+display: flex;
+justify-content: space-between;
+width: 70%;
+margin: 0 auto;
+flex-wrap: wrap;
+}
+/* #footerImg{
+    display: flex;
+    justify-content: space-between;
+} */
+#footerImg p{
+    font-size: 16px;
+    margin-top: 35px;
+}
+#footerImg img{
+    width: 80px;
+    object-fit:contain;
+    margin-bottom: 10px;
+}
+#fMenu{
+    display: block;
+}
+#fMenu ul{
+    list-style: none;
+}
+#fMenu ul li{
+    padding-top:3px;
+}
+#fMenu ul li a{
+    text-decoration: none;
+    color: rgb(248, 163, 5);
+}
+#fMenu ul li a:hover{
+    color: rgb(243, 6, 6);
+}
+#cIcon{
+    width:23px;
+    color: rgb(248, 163, 5);
+    margin-right:10px;
+}
+#phone,#mail,#location{
+    display: flex;
+    margin-top: 10px;
+}
+#concl{
+    background-color:rgb(9, 8, 8);
+    color: red;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+/* =========media queries====== */
+@media (max-width:600px){
+    #headerDivs{
+        display:block;
+    }
+    .homeHolder{
+        border-bottom-right-radius:0px;
+    }
+    #aboutHolder{
+        border-top-right-radius:0px;
+        padding-bottom: 20px;
+        }
+        #hMenu{
+            opacity: 0;
+        }
+    #hMenu ul{
+        display:block;
+        background-color: rgb(10, 10, 10);
+        z-index:-1px;
+        position: relative;
+        padding: 10px;
+    }
+    #hMenu ul li a{
+        color: rgb(255, 255, 255);
+    }
+    #Hname svg{
+        display: block;
+    }
+    #hphoto img{
+        width: 290px;
+    }
+    .homeContent{
+        width: 100%;
+    }
+    .homeContainer{
+        display: block;
+    }
+    #nameIntro{
+        display: block;
+        width: 100%;
+    }
+    #homeCallHolder{
+        width: 100%;
+    }
+    #aboutContainer{
+        display: block;
+    }
+    #aboutImg img{
+        width: 300px;
+        margin-left: 0px;
+    }
+    #status{
+        display: block;
+    }
+    #hstatusLength{
+        padding-left:200px;
+    }
+    #cstatusLength{
+        padding-left:150px;
+    }
+    #jstatusLength{
+        padding-left:100px;
+    }
+    #tstatusLength{
+        padding-left:140px;
+    }
+    #gstatusLength{
+        padding-left:60px;
+    }
+    #statusImg img{
+        width: 300px;
+    }
+    #achievements{
+        width:300px;
+    }
+    #achievements img{
+        width:200px;
+        margin-left:30px;
+        }
+        #contImg img{
+            width:310px;
+        }
+    }
